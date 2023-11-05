@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dudug\OneDrive\Desktop\CD\LAB02\MUX\simulation\qsim
+vMUX2_1_8
+Z1 I_b?n3>F=E`XzE_SfC6FDX3
+Z2 VWCfiL4hhkz5WYe_>egXnX2
+Z3 dC:\Users\dudug\OneDrive\Desktop\CD\LAB02\MUX\simulation\qsim
+Z4 w1698429245
+Z5 8MUX2_1_8.vo
+Z6 FMUX2_1_8.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@m@u@x2_1_8
+!i10b 1
+Z10 !s100 =HI9XTknAdbg:AT_^Tb;R0
+!s85 0
+Z11 !s108 1698429245.757000
+Z12 !s107 MUX2_1_8.vo|
+Z13 !s90 -work|work|MUX2_1_8.vo|
+!s101 -O0
+vMUX2_1_8_vlg_check_tst
+!i10b 1
+!s100 lcjMU=Lco=nnJ5k5U_iBa0
+IjIg3^0l;zb6@zKE568k]<0
+VQXi[VDJ7C>oMW8OKRj7>n3
+R3
+Z14 w1698429244
+Z15 8MUX2_1_8.vt
+Z16 FMUX2_1_8.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1698429245.801000
+Z18 !s107 MUX2_1_8.vt|
+Z19 !s90 -work|work|MUX2_1_8.vt|
+!s101 -O0
+R8
+n@m@u@x2_1_8_vlg_check_tst
+vMUX2_1_8_vlg_sample_tst
+!i10b 1
+!s100 ^zcohP`O0;6MUl2NW6kQP2
+Izc:mPW:ThE6:UlN5ES`T01
+VJ3QaUK6iIe@?4Dj@c5iTW1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@m@u@x2_1_8_vlg_sample_tst
+vMUX2_1_8_vlg_vec_tst
+!i10b 1
+!s100 S=FDkZdaLM7Y1@Y66L8=n2
+IjkP9[j6jGKm0o:2278eL:0
+V_[mIKj<0CJ;VOVC1S0ATm3
+R3
+R14
+R15
+R16
+L0 281
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@m@u@x2_1_8_vlg_vec_tst

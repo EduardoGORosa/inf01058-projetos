@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dudug\OneDrive\Desktop\CD\LAB02\simulation\qsim
+vDECODER
+Z1 !s100 _eKh6T1GFHX[<df65N;<70
+Z2 IoO2nzIcMc;m021NEi]Llf0
+Z3 VYhI0?4G6QRLR]=<oENkzn2
+Z4 dC:\Users\dudug\OneDrive\Desktop\CD\LAB02\simulation\qsim
+Z5 w1698429107
+Z6 8DECODER.vo
+Z7 FDECODER.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|DECODER.vo|
+Z10 o-work work -O0
+Z11 n@d@e@c@o@d@e@r
+!i10b 1
+!s85 0
+Z12 !s108 1698429107.570000
+Z13 !s107 DECODER.vo|
+!s101 -O0
+vDECODER_vlg_check_tst
+Z14 !s100 Y:Id1FP05hO;Z8UY[3?T;0
+Z15 IH?C1Y8QA=i4WA>lQ_90ze3
+Z16 VQR5HkUK?QRi[_37EL2^Cz3
+R4
+Z17 w1698374164
+Z18 8DECODER.vt
+Z19 FDECODER.vt
+L0 63
+R8
+r1
+31
+Z20 !s108 1698374165.196000
+Z21 !s107 DECODER.vt|
+Z22 !s90 -work|work|DECODER.vt|
+R10
+Z23 n@d@e@c@o@d@e@r_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vDECODER_vlg_sample_tst
+Z24 !s100 YHBmcEPGnAmVlh?0ORKEB2
+Z25 IZVOe@Lbz7cW_UE?S5>TK42
+Z26 V1:g8K7Kl998_:8YN]lB:A2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@d@e@c@o@d@e@r_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vDECODER_vlg_vec_tst
+!i10b 1
+Z28 !s100 0UBRc`ZAg1XUSZn9NB`?Z2
+Z29 IW^cm=BFz5DI>okofMoV:_2
+Z30 VNe5zkMgYh<h@Bk@JChHEz0
+R4
+w1698429106
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1698429107.607000
+!s107 DECODER.vt|
+R22
+!s101 -O0
+R10
+Z31 n@d@e@c@o@d@e@r_vlg_vec_tst
+vLAB2
+Z32 Ik;Sm]OBzEaMzzHezmMnRe2
+Z33 VbE0[ikGF[9=nB19`2o6Oh2
+R4
+Z34 w1698346799
+Z35 8LAB2.vo
+Z36 FLAB2.vo
+L0 31
+R8
+r1
+31
+Z37 !s90 -work|work|LAB2.vo|
+R10
+Z38 n@l@a@b2
+Z39 !s100 hZ=]MR]aGNeWRiEc@;2jj1
+Z40 !s108 1698346799.787000
+Z41 !s107 LAB2.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vLAB2_vlg_check_tst
+Z42 I?LlkV]8NK]52GJ9?hli]<2
+Z43 V@CEZ8HGgK_Jzn9oK]XE;]0
+R4
+Z44 w1698346798
+Z45 8LAB2.vt
+Z46 FLAB2.vt
+L0 61
+R8
+r1
+31
+Z47 !s108 1698346799.824000
+Z48 !s107 LAB2.vt|
+Z49 !s90 -work|work|LAB2.vt|
+R10
+Z50 n@l@a@b2_vlg_check_tst
+Z51 !s100 M@CN0[CCNGA1oWabHC@O83
+!i10b 1
+!s85 0
+!s101 -O0
+vLAB2_vlg_sample_tst
+Z52 I0H82@fIFb_k2Tka3l]1<F0
+Z53 VU3TJL^gFgfR2ViYPBI=U[3
+R4
+R44
+R45
+R46
+L0 29
+R8
+r1
+31
+R47
+R48
+R49
+R10
+Z54 n@l@a@b2_vlg_sample_tst
+Z55 !s100 jW4THf9AnHIJ^f`GmQbJL1
+!i10b 1
+!s85 0
+!s101 -O0
+vLAB2_vlg_vec_tst
+Z56 IR1RVl2>@0488Hf0^]^nSl1
+Z57 V;BP9cB8`E5eEB4lk]ih?J1
+R4
+R44
+R45
+R46
+Z58 L0 281
+R8
+r1
+31
+R47
+R48
+R49
+R10
+Z59 n@l@a@b2_vlg_vec_tst
+Z60 !s100 V_o2Cc:HNjjdGe9SVbZVU1
+!i10b 1
+!s85 0
+!s101 -O0
