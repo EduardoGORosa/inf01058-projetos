@@ -1,0 +1,281 @@
+|ULA
+z[0] <= mux4bits21:inst5.Z[0]
+z[1] <= mux4bits21:inst5.Z[1]
+z[2] <= mux4bits21:inst5.Z[2]
+z[3] <= mux4bits21:inst5.Z[3]
+s[0] => mux4bits21:inst1.S0
+s[0] => mux4bits21:inst6.S0
+s[1] => mux4bits21:inst5.S0
+Cin => RCA:inst.Cin
+a[0] => RCA:inst.a[0]
+a[0] => inst2[0].IN0
+a[0] => inst3[0].IN1
+a[0] => inst4[0].IN0
+a[1] => RCA:inst.a[1]
+a[1] => inst2[1].IN0
+a[1] => inst3[1].IN1
+a[1] => inst4[1].IN0
+a[2] => RCA:inst.a[2]
+a[2] => inst2[2].IN0
+a[2] => inst3[2].IN1
+a[2] => inst4[2].IN0
+a[3] => RCA:inst.a[3]
+a[3] => inst2[3].IN0
+a[3] => inst3[3].IN1
+a[3] => inst4[3].IN0
+b[0] => RCA:inst.b[0]
+b[0] => inst2[0].IN1
+b[0] => inst3[0].IN0
+b[1] => RCA:inst.b[1]
+b[1] => inst2[1].IN1
+b[1] => inst3[1].IN0
+b[2] => RCA:inst.b[2]
+b[2] => inst2[2].IN1
+b[2] => inst3[2].IN0
+b[3] => RCA:inst.b[3]
+b[3] => inst2[3].IN1
+b[3] => inst3[3].IN0
+
+
+|ULA|mux4bits21:inst5
+Z[0] <= mux21:inst.Z
+Z[1] <= mux21:inst1.Z
+Z[2] <= mux21:inst2.Z
+Z[3] <= mux21:inst3.Z
+A[0] => mux21:inst.A
+A[1] => mux21:inst1.A
+A[2] => mux21:inst2.A
+A[3] => mux21:inst3.A
+B[0] => mux21:inst.B
+B[1] => mux21:inst1.B
+B[2] => mux21:inst2.B
+B[3] => mux21:inst3.B
+S0 => mux21:inst.S0
+S0 => mux21:inst1.S0
+S0 => mux21:inst3.S0
+S0 => mux21:inst2.S0
+
+
+|ULA|mux4bits21:inst5|mux21:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst5|mux21:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst5|mux21:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst5|mux21:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst1
+Z[0] <= mux21:inst.Z
+Z[1] <= mux21:inst1.Z
+Z[2] <= mux21:inst2.Z
+Z[3] <= mux21:inst3.Z
+A[0] => mux21:inst.A
+A[1] => mux21:inst1.A
+A[2] => mux21:inst2.A
+A[3] => mux21:inst3.A
+B[0] => mux21:inst.B
+B[1] => mux21:inst1.B
+B[2] => mux21:inst2.B
+B[3] => mux21:inst3.B
+S0 => mux21:inst.S0
+S0 => mux21:inst1.S0
+S0 => mux21:inst3.S0
+S0 => mux21:inst2.S0
+
+
+|ULA|mux4bits21:inst1|mux21:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst1|mux21:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst1|mux21:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst1|mux21:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|RCA:inst
+Cout <= FA:inst3.Cout
+a[0] => FA:inst.A
+a[1] => FA:inst1.A
+a[2] => FA:inst2.A
+a[3] => FA:inst3.A
+b[0] => FA:inst.B
+b[1] => FA:inst1.B
+b[2] => FA:inst2.B
+b[3] => FA:inst3.B
+Cin => FA:inst.Cin
+s[0] <= FA:inst.S
+s[1] <= FA:inst1.S
+s[2] <= FA:inst2.S
+s[3] <= FA:inst3.S
+
+
+|ULA|RCA:inst|FA:inst3
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => HA:inst.A
+B => HA:inst.B
+Cin => inst2.IN1
+Cin => inst3.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst3|HA:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst2
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => HA:inst.A
+B => HA:inst.B
+Cin => inst2.IN1
+Cin => inst3.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst2|HA:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => HA:inst.A
+B => HA:inst.B
+Cin => inst2.IN1
+Cin => inst3.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst1|HA:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => HA:inst.A
+B => HA:inst.B
+Cin => inst2.IN1
+Cin => inst3.IN0
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|RCA:inst|FA:inst|HA:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|mux4bits21:inst6
+Z[0] <= mux21:inst.Z
+Z[1] <= mux21:inst1.Z
+Z[2] <= mux21:inst2.Z
+Z[3] <= mux21:inst3.Z
+A[0] => mux21:inst.A
+A[1] => mux21:inst1.A
+A[2] => mux21:inst2.A
+A[3] => mux21:inst3.A
+B[0] => mux21:inst.B
+B[1] => mux21:inst1.B
+B[2] => mux21:inst2.B
+B[3] => mux21:inst3.B
+S0 => mux21:inst.S0
+S0 => mux21:inst1.S0
+S0 => mux21:inst3.S0
+S0 => mux21:inst2.S0
+
+
+|ULA|mux4bits21:inst6|mux21:inst
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst6|mux21:inst1
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst6|mux21:inst3
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
+|ULA|mux4bits21:inst6|mux21:inst2
+Z <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst.IN0
+A => inst2.IN0
+
+
