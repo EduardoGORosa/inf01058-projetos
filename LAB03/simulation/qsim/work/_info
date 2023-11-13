@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\dudug\OneDrive\Desktop\CD\LAB03\simulation\qsim
 vULA
-Z1 !s100 gi>7`f0LmLeS]JBK=]NBo1
-Z2 IXBTX8FkQS3f8Zn]FnZkUX2
-Z3 V>R30:H_ZKQ]@e@Rze0PBH1
+Z1 !s100 DJ_kY1ZZfXb=a]dPfUkWW3
+Z2 I4o;AEPhO?iT:<U?6EE<=l1
+Z3 V8h7YA:L@VAj1Y4[>A:_2`3
 Z4 dC:\Users\dudug\OneDrive\Desktop\CD\LAB03\simulation\qsim
-Z5 w1699840521
+Z5 w1699893621
 Z6 8ULA.vo
 Z7 FULA.vo
 L0 31
@@ -20,14 +20,14 @@ Z10 o-work work -O0
 Z11 n@u@l@a
 !i10b 1
 !s85 0
-Z12 !s108 1699840522.131000
+Z12 !s108 1699893621.960000
 Z13 !s107 ULA.vo|
 !s101 -O0
 vULA_vlg_check_tst
 !i10b 1
-Z14 !s100 IHca=h_1zUR28OC;Y:]e30
-Z15 IZQmIAULS8?X_024MlD^fh1
-Z16 VU6NnNbCCTca[6U=Tkl7GY3
+Z14 !s100 LRUdg:g^<e_=6j9dNE3AE0
+Z15 IHl?lQN7mR?SVUR9V:DELB0
+Z16 V2g9Ge_QTZbcg_NaFjRLkH3
 R4
 R5
 Z17 8ULA.vt
@@ -37,7 +37,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1699840522.173000
+Z19 !s108 1699893621.997000
 Z20 !s107 ULA.vt|
 Z21 !s90 -work|work|ULA.vt|
 !s101 -O0
@@ -65,14 +65,14 @@ R10
 Z26 n@u@l@a_vlg_sample_tst
 vULA_vlg_vec_tst
 !i10b 1
-!s100 7cgZVOI9h10GcVP6AGzN`1
-I]09fiHIMcVUQla3cjOFfG2
+!s100 O0LlZ0gZ[EGoAIMnczhkR0
+IaRm9:EaWhA8k7G?LZVQKl1
 Z27 V@H?nKIIOPXSf=Pjh4d^VA0
 R4
 R5
 R17
 R18
-Z28 L0 211
+Z28 L0 292
 R8
 r1
 !s85 0
