@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dudug\OneDrive\Desktop\CD\LAB04\simulation\qsim
+vULA
+Z1 !s100 T][=1MEb4UJZ[CeLFe^Q@0
+Z2 IKNUeY?Y68Ac?^]j[6VGFQ0
+Z3 V><SkoDRmOVGQO]`RUaYzH3
+Z4 dC:\Users\dudug\OneDrive\Desktop\CD\LAB04\simulation\qsim
+Z5 w1701904856
+Z6 8ULA.vo
+Z7 FULA.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ULA.vo|
+Z10 o-work work -O0
+Z11 n@u@l@a
+Z12 !s108 1701904857.065000
+Z13 !s107 ULA.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_DISPLAY
+Z14 IelgcfI7nmNb@gf9AedfB`2
+Z15 V^A3<0<:42h`7DEXgPa;cE1
+R4
+Z16 w1701907235
+Z17 8ULA_DISPLAY.vo
+Z18 FULA_DISPLAY.vo
+L0 31
+R8
+r1
+31
+Z19 !s90 -work|work|ULA_DISPLAY.vo|
+R10
+Z20 n@u@l@a_@d@i@s@p@l@a@y
+!i10b 1
+Z21 !s100 mV1BeUB>W?<5I6KMZAQa@1
+!s85 0
+Z22 !s108 1701907235.897000
+Z23 !s107 ULA_DISPLAY.vo|
+!s101 -O0
+vULA_DISPLAY_vlg_check_tst
+!i10b 1
+Z24 !s100 ;^oOTjYk3Uk]Qi;Hm`_nB2
+Z25 IC^^W9SlJGbK3eGM3J7h962
+Z26 VhOoXDZj?i6DW=MaXP3d_>0
+R4
+R16
+Z27 8ULA_DISPLAY.vt
+Z28 FULA_DISPLAY.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z29 !s108 1701907235.933000
+Z30 !s107 ULA_DISPLAY.vt|
+Z31 !s90 -work|work|ULA_DISPLAY.vt|
+!s101 -O0
+R10
+Z32 n@u@l@a_@d@i@s@p@l@a@y_vlg_check_tst
+vULA_DISPLAY_vlg_sample_tst
+!i10b 1
+Z33 !s100 8b?H4XDzQQ`GN@PF6582O0
+Z34 IOcaJUdBjb2;Wb3V6iR_D62
+Z35 VEKE41eQnG[l0Z]3Q_TfhK2
+R4
+R16
+R27
+R28
+L0 29
+R8
+r1
+!s85 0
+31
+R29
+R30
+R31
+!s101 -O0
+R10
+Z36 n@u@l@a_@d@i@s@p@l@a@y_vlg_sample_tst
+vULA_DISPLAY_vlg_vec_tst
+!i10b 1
+!s100 JX>GdH6I4YRP0nH00HTR>0
+I1`F=o1=YbVId5SWd5YXma3
+Z37 V[<7><M>AZC>aVNGcHX2m^0
+R4
+R16
+R27
+R28
+Z38 L0 317
+R8
+r1
+!s85 0
+31
+R29
+R30
+R31
+!s101 -O0
+R10
+Z39 n@u@l@a_@d@i@s@p@l@a@y_vlg_vec_tst
+vULA_vlg_check_tst
+Z40 !s100 [=TTjcbFASn2n5M?F;LVi0
+Z41 I1J7Ti1j[6H36hY[5DW3?`3
+Z42 VVCnb?4e0A:oL9FzIF2OQA3
+R4
+R5
+Z43 8ULA.vt
+Z44 FULA.vt
+L0 61
+R8
+r1
+31
+Z45 !s108 1701904857.100000
+Z46 !s107 ULA.vt|
+Z47 !s90 -work|work|ULA.vt|
+R10
+Z48 n@u@l@a_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_vlg_sample_tst
+Z49 !s100 F8S4_OH^<[cLHCl2CR1Al2
+Z50 IL<[LN6E6HADN^W;:U`A370
+Z51 VN^BN4T8_J<WH8b<I@0_zc3
+R4
+R5
+R43
+R44
+L0 29
+R8
+r1
+31
+R45
+R46
+R47
+R10
+Z52 n@u@l@a_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vULA_vlg_vec_tst
+Z53 I3bV8<YcKYEnSQ4B2]j01P3
+Z54 V@H?nKIIOPXSf=Pjh4d^VA0
+R4
+R5
+R43
+R44
+Z55 L0 188
+R8
+r1
+31
+R45
+R46
+R47
+R10
+Z56 n@u@l@a_vlg_vec_tst
+Z57 !s100 6bPZb`D`NS??bPc[fZIQQ2
+!i10b 1
+!s85 0
+!s101 -O0
