@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 208 232 224)
+	(rect 56 208 224 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Cin" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
@@ -559,10 +559,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 232 216)
-	(pt 280 216)
-)
-(connector
 	(text "a[3..0]" (rect 360 424 391 436)(font "Arial" ))
 	(pt 424 440)
 	(pt 336 440)
@@ -685,4 +681,8 @@ applicable agreement for further details.
 	(text "z[0]" (rect 1013 496 1030 508)(font "Arial" ))
 	(pt 1024 512)
 	(pt 992 512)
+)
+(connector
+	(pt 280 216)
+	(pt 224 216)
 )

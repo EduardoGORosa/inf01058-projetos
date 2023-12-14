@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dudug\OneDrive\Desktop\CD\Projeto Final\MUX8\simulation\qsim
+vMux8bits21
+Z1 IYCo2jcF`WLX:beM9XIZGW1
+Z2 V9G`QbO@CK708_Kz9z4zag0
+Z3 dC:\Users\dudug\OneDrive\Desktop\CD\Projeto Final\MUX8\simulation\qsim
+Z4 w1700440022
+Z5 8Mux8bits21.vo
+Z6 FMux8bits21.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@mux8bits21
+!i10b 1
+Z10 !s100 2FHE0OO?l9=a_ia7Hf07K0
+!s85 0
+Z11 !s108 1700440022.427000
+Z12 !s107 Mux8bits21.vo|
+Z13 !s90 -work|work|Mux8bits21.vo|
+!s101 -O0
+vMux8bits21_vlg_check_tst
+!i10b 1
+!s100 lJXBDobj60gYOGLAemio^1
+I][9LOEL7<mCoeBo51`Hd@2
+VZDo9C5VP98Ui3k1=23zjX2
+R3
+Z14 w1700440021
+Z15 8Mux8bits21.vt
+Z16 FMux8bits21.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1700440022.469000
+Z18 !s107 Mux8bits21.vt|
+Z19 !s90 -work|work|Mux8bits21.vt|
+!s101 -O0
+R8
+n@mux8bits21_vlg_check_tst
+vMux8bits21_vlg_sample_tst
+!i10b 1
+!s100 bommV7X@GeFNeoF5nESKT2
+Ig=z3@obMW7?I>8Y`fPMEE0
+V4XU_RfA]UN3bM;;zL@h4J1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@mux8bits21_vlg_sample_tst
+vMux8bits21_vlg_vec_tst
+!i10b 1
+!s100 McZOWGojU]oo]X^TbA1742
+IK7Q@SzJI6IM=_l@cT0BFF0
+V]QYD`0TkSo?:]fU>>dYF02
+R3
+R14
+R15
+R16
+L0 281
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@mux8bits21_vlg_vec_tst

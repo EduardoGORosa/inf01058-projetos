@@ -1,0 +1,26 @@
+# do CODER.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CODER
+# 
+# Top level modules:
+# 	CODER
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CODER_vlg_sample_tst
+# -- Compiling module CODER_vlg_check_tst
+# -- Compiling module CODER_vlg_vec_tst
+# 
+# Top level modules:
+# 	CODER_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.CODER_vlg_vec_tst 
+# Loading work.CODER_vlg_vec_tst
+# Loading work.CODER
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading work.CODER_vlg_sample_tst
+# Loading work.CODER_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : CODER.vt(183)
+#    Time: 1 us  Iteration: 0  Instance: /CODER_vlg_vec_tst/tb_out

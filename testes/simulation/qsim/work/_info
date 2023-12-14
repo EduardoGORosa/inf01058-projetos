@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dudug\OneDrive\Desktop\CD\testes\simulation\qsim
+vcomp_igual
+Z1 !s100 P2Z0a0lRDKENOoWQEICXF3
+Z2 Ie]6FfzGKFU8EL>ZIzm80[3
+Z3 VNl4J<Czj@WBZ2_G`[NS`e0
+Z4 dC:\Users\dudug\OneDrive\Desktop\CD\testes\simulation\qsim
+Z5 w1700686206
+Z6 8comp_igual.vo
+Z7 Fcomp_igual.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|comp_igual.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1700686206.700000
+Z12 !s107 comp_igual.vo|
+!s101 -O0
+vcomp_igual_vlg_check_tst
+!i10b 1
+Z13 !s100 fUadm^nM0gB`=;6dLi92m2
+Z14 If7OQM3N25CFFIfD4M1]oM3
+Z15 V=i5ZmOj1N:cT33gIU2bNX3
+R4
+Z16 w1700686205
+Z17 8comp_igual.vt
+Z18 Fcomp_igual.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1700686206.734000
+Z20 !s107 comp_igual.vt|
+Z21 !s90 -work|work|comp_igual.vt|
+!s101 -O0
+R10
+vcomp_igual_vlg_sample_tst
+!i10b 1
+Z22 !s100 l?<M^U6Nim:Y`O5S[zh<M1
+Z23 IMo89>6XAdOOb8UT<ZW2j42
+Z24 VSHGo=Nde<bV4PI]U9mEYF1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vcomp_igual_vlg_vec_tst
+!i10b 1
+!s100 MjNE`C?LB[e94l9S84Z3K3
+I8[<lD:Gh;Uek;:<3L:X2D1
+Z25 Vh?i:I;<=?e0i3N@cOh78z2
+R4
+R16
+R17
+R18
+Z26 L0 154
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

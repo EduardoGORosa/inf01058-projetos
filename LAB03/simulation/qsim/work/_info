@@ -8,7 +8,7 @@ Z1 !s100 DJ_kY1ZZfXb=a]dPfUkWW3
 Z2 I4o;AEPhO?iT:<U?6EE<=l1
 Z3 V8h7YA:L@VAj1Y4[>A:_2`3
 Z4 dC:\Users\dudug\OneDrive\Desktop\CD\LAB03\simulation\qsim
-Z5 w1699893621
+Z5 w1700088673
 Z6 8ULA.vo
 Z7 FULA.vo
 L0 31
@@ -20,66 +20,66 @@ Z10 o-work work -O0
 Z11 n@u@l@a
 !i10b 1
 !s85 0
-Z12 !s108 1699893621.960000
+Z12 !s108 1700088674.569000
 Z13 !s107 ULA.vo|
 !s101 -O0
 vULA_vlg_check_tst
 !i10b 1
-Z14 !s100 LRUdg:g^<e_=6j9dNE3AE0
-Z15 IHl?lQN7mR?SVUR9V:DELB0
-Z16 V2g9Ge_QTZbcg_NaFjRLkH3
+!s100 38ch:4e`@]R;b:k;2<=7c0
+I4c7P85@gnK[^j_<ZJYaGU1
+Z14 V2g9Ge_QTZbcg_NaFjRLkH3
 R4
 R5
-Z17 8ULA.vt
-Z18 FULA.vt
+Z15 8ULA.vt
+Z16 FULA.vt
 L0 63
 R8
 r1
 !s85 0
 31
-Z19 !s108 1699893621.997000
-Z20 !s107 ULA.vt|
-Z21 !s90 -work|work|ULA.vt|
+Z17 !s108 1700088674.612000
+Z18 !s107 ULA.vt|
+Z19 !s90 -work|work|ULA.vt|
 !s101 -O0
 R10
-Z22 n@u@l@a_vlg_check_tst
+Z20 n@u@l@a_vlg_check_tst
 vULA_vlg_sample_tst
 !i10b 1
-Z23 !s100 GP=z6Y@l7h1M:YcG81C@o2
-Z24 IT7T40^8mKz=A[=z7gH;J_0
-Z25 V`lbbeBZaZbEc`kKBjC`K@1
+Z21 !s100 GP=z6Y@l7h1M:YcG81C@o2
+Z22 IT7T40^8mKz=A[=z7gH;J_0
+Z23 V`lbbeBZaZbEc`kKBjC`K@1
 R4
 R5
-R17
-R18
+R15
+R16
 L0 29
 R8
 r1
 !s85 0
 31
-R19
-R20
-R21
-!s101 -O0
-R10
-Z26 n@u@l@a_vlg_sample_tst
-vULA_vlg_vec_tst
-!i10b 1
-!s100 O0LlZ0gZ[EGoAIMnczhkR0
-IaRm9:EaWhA8k7G?LZVQKl1
-Z27 V@H?nKIIOPXSf=Pjh4d^VA0
-R4
-R5
 R17
 R18
-Z28 L0 292
+R19
+!s101 -O0
+R10
+Z24 n@u@l@a_vlg_sample_tst
+vULA_vlg_vec_tst
+!i10b 1
+!s100 ]7:KNBKEUBW<W4Ti:]LOc1
+IfTgWddM5=62RoD595WP6>0
+Z25 V@H?nKIIOPXSf=Pjh4d^VA0
+R4
+R5
+R15
+R16
+Z26 L0 292
 R8
 r1
 !s85 0
 31
+R17
+R18
 R19
-R20
-R21
 !s101 -O0
 R10
-Z29 n@u@l@a_vlg_vec_tst
+Z27 n@u@l@a_vlg_vec_tst

@@ -3,7 +3,7 @@ $comment
 		vcd file ULA.msim.vcd -direction
 $end
 $date
-	Mon Nov 13 13:40:22 2023
+	Wed Nov 15 19:51:14 2023
 $end
 $version
 	ModelSim Version 10.1d
@@ -70,16 +70,16 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1111 !
-b1100 "
+b101 !
+b1000 "
 0#
 b0 $
-1%
+0%
 1&
 0'
 1+
-1*
-0)
+0*
+1)
 1(
 x,
 0-
@@ -89,15 +89,15 @@ x/
 11
 12
 03
-14
+04
 15
 16
-07
-18
+17
+08
 19
 0:
 1;
-1<
+0<
 1=
 1>
 0?
@@ -106,19 +106,19 @@ x/
 0B
 0C
 0D
-1E
-1F
-1G
+0E
+0F
+0G
 0H
 0I
 0J
-0K
+1K
 1L
-0M
-0N
-1O
-1P
-1Q
+1M
+1N
+0O
+0P
+0Q
 1R
 1S
 1T

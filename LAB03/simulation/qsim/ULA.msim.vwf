@@ -657,7 +657,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|a[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -675,7 +675,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|a[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -702,7 +702,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|b[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -756,7 +756,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|Cout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -792,7 +792,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|z[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -801,7 +801,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|z[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -891,7 +891,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|Cout~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -918,7 +918,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|z[2]~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -927,7 +927,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|z[1]~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -963,7 +963,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|a[3]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1044,7 +1044,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|b[2]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1053,7 +1053,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst|inst2|inst5~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1062,7 +1062,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst|inst3|inst5~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1098,7 +1098,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst5|inst3|inst3~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1116,7 +1116,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst5|inst2|inst3~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1125,7 +1125,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst5|inst2|inst3~3_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1134,7 +1134,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|a[1]~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1143,7 +1143,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst5|inst1|inst3~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1152,7 +1152,7 @@ TRANSITION_LIST("ULA_vlg_vec_tst|i1|inst5|inst1|inst3~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
