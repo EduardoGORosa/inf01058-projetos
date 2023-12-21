@@ -1,0 +1,137 @@
+|DISPLAY
+A <= A:inst.A
+BCD[0] => A:inst.BCD_in[0]
+BCD[0] => B:inst1.BCD_in[0]
+BCD[0] => C:inst2.BCD_in[0]
+BCD[0] => D:inst3.BCD_in[0]
+BCD[0] => E:inst4.BCD_in[0]
+BCD[0] => F:inst5.BCD_in[0]
+BCD[0] => G:inst6.BCD_in[0]
+BCD[1] => A:inst.BCD_in[1]
+BCD[1] => B:inst1.BCD_in[1]
+BCD[1] => C:inst2.BCD_in[1]
+BCD[1] => D:inst3.BCD_in[1]
+BCD[1] => E:inst4.BCD_in[1]
+BCD[1] => F:inst5.BCD_in[1]
+BCD[1] => G:inst6.BCD_in[1]
+BCD[2] => A:inst.BCD_in[2]
+BCD[2] => B:inst1.BCD_in[2]
+BCD[2] => C:inst2.BCD_in[2]
+BCD[2] => D:inst3.BCD_in[2]
+BCD[2] => E:inst4.BCD_in[2]
+BCD[2] => F:inst5.BCD_in[2]
+BCD[2] => G:inst6.BCD_in[2]
+BCD[3] => A:inst.BCD_in[3]
+BCD[3] => B:inst1.BCD_in[3]
+BCD[3] => C:inst2.BCD_in[3]
+BCD[3] => D:inst3.BCD_in[3]
+BCD[3] => E:inst4.BCD_in[3]
+BCD[3] => F:inst5.BCD_in[3]
+BCD[3] => G:inst6.BCD_in[3]
+B <= B:inst1.B
+C <= C:inst2.C
+D <= D:inst3.D
+E <= E:inst4.E
+F <= F:inst5.F
+G <= G:inst6.G
+
+
+|DISPLAY|A:inst
+A <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst11.IN0
+BCD_in[0] => inst2.IN3
+BCD_in[0] => inst3.IN3
+BCD_in[0] => inst1.IN3
+BCD_in[1] => inst8.IN0
+BCD_in[1] => inst1.IN2
+BCD_in[2] => inst.IN1
+BCD_in[2] => inst9.IN0
+BCD_in[2] => inst3.IN1
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst3.IN0
+BCD_in[3] => inst1.IN0
+
+
+|DISPLAY|B:inst1
+B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst13.IN0
+BCD_in[0] => inst2.IN3
+BCD_in[0] => inst11.IN2
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst14.IN0
+BCD_in[1] => inst11.IN1
+BCD_in[2] => inst.IN0
+BCD_in[2] => inst12.IN1
+BCD_in[2] => inst2.IN1
+BCD_in[3] => inst12.IN0
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst11.IN0
+
+
+|DISPLAY|C:inst2
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst13.IN0
+BCD_in[1] => inst11.IN2
+BCD_in[1] => inst2.IN2
+BCD_in[2] => inst11.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst.IN1
+BCD_in[3] => inst11.IN0
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst.IN0
+
+
+|DISPLAY|D:inst3
+D <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst.IN2
+BCD_in[0] => inst14.IN0
+BCD_in[0] => inst5.IN3
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst4.IN2
+BCD_in[1] => inst15.IN0
+BCD_in[2] => inst.IN0
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst3.IN1
+BCD_in[3] => inst4.IN0
+BCD_in[3] => inst10.IN0
+
+
+|DISPLAY|E:inst4
+E <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst2.IN2
+BCD_in[0] => inst3.IN2
+BCD_in[0] => inst1.IN2
+BCD_in[1] => inst15.IN0
+BCD_in[2] => inst.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst1.IN1
+BCD_in[3] => inst10.IN0
+
+
+|DISPLAY|F:inst5
+F <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst.IN2
+BCD_in[0] => inst12.IN2
+BCD_in[0] => inst13.IN3
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst8.IN0
+BCD_in[1] => inst11.IN2
+BCD_in[2] => inst9.IN0
+BCD_in[2] => inst13.IN1
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst13.IN0
+
+
+|DISPLAY|G:inst6
+G <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst14.IN0
+BCD_in[0] => inst4.IN3
+BCD_in[1] => inst15.IN0
+BCD_in[1] => inst4.IN2
+BCD_in[2] => inst3.IN1
+BCD_in[2] => inst4.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[3] => inst3.IN0
+BCD_in[3] => inst10.IN0
+
+

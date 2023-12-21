@@ -1,0 +1,163 @@
+|SYNC_COUNTER
+S[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+enable => inst.ACLR
+enable => inst32.ACLR
+enable => inst2.ACLR
+enable => inst3.ACLR
+enable => inst7.ACLR
+enable => inst41.ACLR
+enable => inst57.ACLR
+enable => inst49.ACLR
+clock => inst.CLK
+clock => inst32.CLK
+clock => inst2.CLK
+clock => inst3.CLK
+clock => inst7.CLK
+clock => inst41.CLK
+clock => inst57.CLK
+clock => inst49.CLK
+D[0] => MUX_41:inst4.A
+D[1] => MUX_41:inst34.A
+D[2] => MUX_41:inst6.A
+D[3] => MUX_41:inst5.A
+D[4] => MUX_41:inst12.A
+D[5] => MUX_41:inst42.A
+D[6] => MUX_41:inst50.A
+D[7] => MUX_41:inst58.A
+sel[0] => MUX_41:inst4.Sel[0]
+sel[0] => MUX_41:inst6.Sel[0]
+sel[0] => MUX_41:inst34.Sel[0]
+sel[0] => MUX_41:inst5.Sel[0]
+sel[0] => MUX_41:inst12.Sel[0]
+sel[0] => MUX_41:inst42.Sel[0]
+sel[0] => MUX_41:inst58.Sel[0]
+sel[0] => MUX_41:inst50.Sel[0]
+sel[1] => MUX_41:inst4.Sel[1]
+sel[1] => MUX_41:inst6.Sel[1]
+sel[1] => MUX_41:inst34.Sel[1]
+sel[1] => MUX_41:inst5.Sel[1]
+sel[1] => MUX_41:inst12.Sel[1]
+sel[1] => MUX_41:inst42.Sel[1]
+sel[1] => MUX_41:inst58.Sel[1]
+sel[1] => MUX_41:inst50.Sel[1]
+
+
+|SYNC_COUNTER|MUX_41:inst4
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst6
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst34
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst5
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst12
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst42
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst58
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER|MUX_41:inst50
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+

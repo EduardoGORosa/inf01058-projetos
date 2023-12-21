@@ -1,0 +1,496 @@
+|SYNC_COUNTER_DISPLAY
+display[0] <= DISPLAY:inst1.A
+display[1] <= DISPLAY:inst1.B
+display[2] <= DISPLAY:inst1.C
+display[3] <= DISPLAY:inst1.D
+display[4] <= DISPLAY:inst1.E
+display[5] <= DISPLAY:inst1.F
+display[6] <= DISPLAY:inst1.G
+display[7] <= DISPLAY:inst3.A
+display[8] <= DISPLAY:inst3.B
+display[9] <= DISPLAY:inst3.C
+display[10] <= DISPLAY:inst3.D
+display[11] <= DISPLAY:inst3.E
+display[12] <= DISPLAY:inst3.F
+display[13] <= DISPLAY:inst3.G
+clk => LAB05:inst2.clk
+rst => LAB05:inst2.rst
+enable => SYNC_COUNTER:inst.enable
+D[0] => SYNC_COUNTER:inst.D[0]
+D[1] => SYNC_COUNTER:inst.D[1]
+D[2] => SYNC_COUNTER:inst.D[2]
+D[3] => SYNC_COUNTER:inst.D[3]
+D[4] => SYNC_COUNTER:inst.D[4]
+D[5] => SYNC_COUNTER:inst.D[5]
+D[6] => SYNC_COUNTER:inst.D[6]
+D[7] => SYNC_COUNTER:inst.D[7]
+sel[0] => SYNC_COUNTER:inst.sel[0]
+sel[1] => SYNC_COUNTER:inst.sel[1]
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1
+A <= A:inst.A
+BCD[0] => A:inst.BCD_in[0]
+BCD[0] => B:inst1.BCD_in[0]
+BCD[0] => C:inst2.BCD_in[0]
+BCD[0] => D:inst3.BCD_in[0]
+BCD[0] => E:inst4.BCD_in[0]
+BCD[0] => F:inst5.BCD_in[0]
+BCD[0] => G:inst6.BCD_in[0]
+BCD[1] => A:inst.BCD_in[1]
+BCD[1] => B:inst1.BCD_in[1]
+BCD[1] => C:inst2.BCD_in[1]
+BCD[1] => D:inst3.BCD_in[1]
+BCD[1] => E:inst4.BCD_in[1]
+BCD[1] => F:inst5.BCD_in[1]
+BCD[1] => G:inst6.BCD_in[1]
+BCD[2] => A:inst.BCD_in[2]
+BCD[2] => B:inst1.BCD_in[2]
+BCD[2] => C:inst2.BCD_in[2]
+BCD[2] => D:inst3.BCD_in[2]
+BCD[2] => E:inst4.BCD_in[2]
+BCD[2] => F:inst5.BCD_in[2]
+BCD[2] => G:inst6.BCD_in[2]
+BCD[3] => A:inst.BCD_in[3]
+BCD[3] => B:inst1.BCD_in[3]
+BCD[3] => C:inst2.BCD_in[3]
+BCD[3] => D:inst3.BCD_in[3]
+BCD[3] => E:inst4.BCD_in[3]
+BCD[3] => F:inst5.BCD_in[3]
+BCD[3] => G:inst6.BCD_in[3]
+B <= B:inst1.B
+C <= C:inst2.C
+D <= D:inst3.D
+E <= E:inst4.E
+F <= F:inst5.F
+G <= G:inst6.G
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|A:inst
+A <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst11.IN0
+BCD_in[0] => inst2.IN3
+BCD_in[0] => inst3.IN3
+BCD_in[0] => inst1.IN3
+BCD_in[1] => inst8.IN0
+BCD_in[1] => inst1.IN2
+BCD_in[2] => inst.IN1
+BCD_in[2] => inst9.IN0
+BCD_in[2] => inst3.IN1
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst3.IN0
+BCD_in[3] => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|B:inst1
+B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst13.IN0
+BCD_in[0] => inst2.IN3
+BCD_in[0] => inst11.IN2
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst14.IN0
+BCD_in[1] => inst11.IN1
+BCD_in[2] => inst.IN0
+BCD_in[2] => inst12.IN1
+BCD_in[2] => inst2.IN1
+BCD_in[3] => inst12.IN0
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst11.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|C:inst2
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst13.IN0
+BCD_in[1] => inst11.IN2
+BCD_in[1] => inst2.IN2
+BCD_in[2] => inst11.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst.IN1
+BCD_in[3] => inst11.IN0
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|D:inst3
+D <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst.IN2
+BCD_in[0] => inst14.IN0
+BCD_in[0] => inst5.IN3
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst4.IN2
+BCD_in[1] => inst15.IN0
+BCD_in[2] => inst.IN0
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst3.IN1
+BCD_in[3] => inst4.IN0
+BCD_in[3] => inst10.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|E:inst4
+E <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst2.IN2
+BCD_in[0] => inst3.IN2
+BCD_in[0] => inst1.IN2
+BCD_in[1] => inst15.IN0
+BCD_in[2] => inst.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst1.IN1
+BCD_in[3] => inst10.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|F:inst5
+F <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst.IN2
+BCD_in[0] => inst12.IN2
+BCD_in[0] => inst13.IN3
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst8.IN0
+BCD_in[1] => inst11.IN2
+BCD_in[2] => inst9.IN0
+BCD_in[2] => inst13.IN1
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst13.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst1|G:inst6
+G <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst14.IN0
+BCD_in[0] => inst4.IN3
+BCD_in[1] => inst15.IN0
+BCD_in[1] => inst4.IN2
+BCD_in[2] => inst3.IN1
+BCD_in[2] => inst4.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[3] => inst3.IN0
+BCD_in[3] => inst10.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst
+S[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+enable => inst.ACLR
+enable => inst32.ACLR
+enable => inst2.ACLR
+enable => inst3.ACLR
+enable => inst7.ACLR
+enable => inst41.ACLR
+enable => inst57.ACLR
+enable => inst49.ACLR
+clock => inst.CLK
+clock => inst32.CLK
+clock => inst2.CLK
+clock => inst3.CLK
+clock => inst7.CLK
+clock => inst41.CLK
+clock => inst57.CLK
+clock => inst49.CLK
+D[0] => MUX_41:inst4.A
+D[1] => MUX_41:inst34.A
+D[2] => MUX_41:inst6.A
+D[3] => MUX_41:inst5.A
+D[4] => MUX_41:inst12.A
+D[5] => MUX_41:inst42.A
+D[6] => MUX_41:inst50.A
+D[7] => MUX_41:inst58.A
+sel[0] => MUX_41:inst4.Sel[0]
+sel[0] => MUX_41:inst6.Sel[0]
+sel[0] => MUX_41:inst34.Sel[0]
+sel[0] => MUX_41:inst5.Sel[0]
+sel[0] => MUX_41:inst12.Sel[0]
+sel[0] => MUX_41:inst42.Sel[0]
+sel[0] => MUX_41:inst58.Sel[0]
+sel[0] => MUX_41:inst50.Sel[0]
+sel[1] => MUX_41:inst4.Sel[1]
+sel[1] => MUX_41:inst6.Sel[1]
+sel[1] => MUX_41:inst34.Sel[1]
+sel[1] => MUX_41:inst5.Sel[1]
+sel[1] => MUX_41:inst12.Sel[1]
+sel[1] => MUX_41:inst42.Sel[1]
+sel[1] => MUX_41:inst58.Sel[1]
+sel[1] => MUX_41:inst50.Sel[1]
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst4
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst6
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst34
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst5
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst12
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst42
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst58
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|SYNC_COUNTER:inst|MUX_41:inst50
+S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+Sel[0] => inst5.IN0
+Sel[0] => inst2.IN1
+Sel[0] => inst1.IN1
+Sel[1] => inst4.IN0
+Sel[1] => inst3.IN2
+Sel[1] => inst2.IN2
+C => inst3.IN0
+D => inst2.IN0
+B => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|LAB05:inst2
+s <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst23.ACLR
+rst => inst22.ACLR
+rst => inst21.ACLR
+rst => inst20.ACLR
+rst => inst19.ACLR
+rst => nome4.ACLR
+rst => inst17.ACLR
+rst => inst16.ACLR
+rst => inst15.ACLR
+rst => inst14.ACLR
+rst => inst13.ACLR
+rst => inst12.ACLR
+rst => inst5.ACLR
+rst => inst11.ACLR
+rst => inst10.ACLR
+rst => inst9.ACLR
+rst => inst8.ACLR
+rst => inst7.ACLR
+rst => inst6.ACLR
+rst => inst4.ACLR
+rst => inst3.ACLR
+rst => inst2.ACLR
+rst => inst1.ACLR
+rst => nome3.ACLR
+clk => nome3.CLK
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3
+A <= A:inst.A
+BCD[0] => A:inst.BCD_in[0]
+BCD[0] => B:inst1.BCD_in[0]
+BCD[0] => C:inst2.BCD_in[0]
+BCD[0] => D:inst3.BCD_in[0]
+BCD[0] => E:inst4.BCD_in[0]
+BCD[0] => F:inst5.BCD_in[0]
+BCD[0] => G:inst6.BCD_in[0]
+BCD[1] => A:inst.BCD_in[1]
+BCD[1] => B:inst1.BCD_in[1]
+BCD[1] => C:inst2.BCD_in[1]
+BCD[1] => D:inst3.BCD_in[1]
+BCD[1] => E:inst4.BCD_in[1]
+BCD[1] => F:inst5.BCD_in[1]
+BCD[1] => G:inst6.BCD_in[1]
+BCD[2] => A:inst.BCD_in[2]
+BCD[2] => B:inst1.BCD_in[2]
+BCD[2] => C:inst2.BCD_in[2]
+BCD[2] => D:inst3.BCD_in[2]
+BCD[2] => E:inst4.BCD_in[2]
+BCD[2] => F:inst5.BCD_in[2]
+BCD[2] => G:inst6.BCD_in[2]
+BCD[3] => A:inst.BCD_in[3]
+BCD[3] => B:inst1.BCD_in[3]
+BCD[3] => C:inst2.BCD_in[3]
+BCD[3] => D:inst3.BCD_in[3]
+BCD[3] => E:inst4.BCD_in[3]
+BCD[3] => F:inst5.BCD_in[3]
+BCD[3] => G:inst6.BCD_in[3]
+B <= B:inst1.B
+C <= C:inst2.C
+D <= D:inst3.D
+E <= E:inst4.E
+F <= F:inst5.F
+G <= G:inst6.G
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|A:inst
+A <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst11.IN0
+BCD_in[0] => inst2.IN3
+BCD_in[0] => inst3.IN3
+BCD_in[0] => inst1.IN3
+BCD_in[1] => inst8.IN0
+BCD_in[1] => inst1.IN2
+BCD_in[2] => inst.IN1
+BCD_in[2] => inst9.IN0
+BCD_in[2] => inst3.IN1
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst3.IN0
+BCD_in[3] => inst1.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|B:inst1
+B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst13.IN0
+BCD_in[0] => inst2.IN3
+BCD_in[0] => inst11.IN2
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst14.IN0
+BCD_in[1] => inst11.IN1
+BCD_in[2] => inst.IN0
+BCD_in[2] => inst12.IN1
+BCD_in[2] => inst2.IN1
+BCD_in[3] => inst12.IN0
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst11.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|C:inst2
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst13.IN0
+BCD_in[1] => inst11.IN2
+BCD_in[1] => inst2.IN2
+BCD_in[2] => inst11.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst.IN1
+BCD_in[3] => inst11.IN0
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|D:inst3
+D <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst.IN2
+BCD_in[0] => inst14.IN0
+BCD_in[0] => inst5.IN3
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst4.IN2
+BCD_in[1] => inst15.IN0
+BCD_in[2] => inst.IN0
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst3.IN1
+BCD_in[3] => inst4.IN0
+BCD_in[3] => inst10.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|E:inst4
+E <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst2.IN2
+BCD_in[0] => inst3.IN2
+BCD_in[0] => inst1.IN2
+BCD_in[1] => inst15.IN0
+BCD_in[2] => inst.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[2] => inst1.IN1
+BCD_in[3] => inst10.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|F:inst5
+F <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst.IN2
+BCD_in[0] => inst12.IN2
+BCD_in[0] => inst13.IN3
+BCD_in[1] => inst.IN1
+BCD_in[1] => inst8.IN0
+BCD_in[1] => inst11.IN2
+BCD_in[2] => inst9.IN0
+BCD_in[2] => inst13.IN1
+BCD_in[3] => inst10.IN0
+BCD_in[3] => inst13.IN0
+
+
+|SYNC_COUNTER_DISPLAY|DISPLAY:inst3|G:inst6
+G <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+BCD_in[0] => inst14.IN0
+BCD_in[0] => inst4.IN3
+BCD_in[1] => inst15.IN0
+BCD_in[1] => inst4.IN2
+BCD_in[2] => inst3.IN1
+BCD_in[2] => inst4.IN1
+BCD_in[2] => inst12.IN0
+BCD_in[3] => inst3.IN0
+BCD_in[3] => inst10.IN0
+
+
