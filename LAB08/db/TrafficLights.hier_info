@@ -1,0 +1,283 @@
+|TrafficLights
+green <= s[0].DB_MAX_OUTPUT_PORT_TYPE
+clock => fsm_lights:inst15.clock
+clock => freq_divider:inst1.clk
+clock => mux21:inst2.1
+red <= s[2].DB_MAX_OUTPUT_PORT_TYPE
+yellow <= s[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TrafficLights|reg3b:inst12
+s[0] <= FF0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= FF1.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= FF2.DB_MAX_OUTPUT_PORT_TYPE
+reset => FF1.ACLR
+reset => FF2.ACLR
+reset => FF0.ACLR
+clock => FF1.CLK
+clock => FF2.CLK
+clock => FF0.CLK
+states[0] => mux21:inst5.1
+states[1] => mux21:inst4.1
+states[2] => mux21:inst3.1
+load => mux21:inst4.sel
+load => mux21:inst3.sel
+load => mux21:inst5.sel
+
+
+|TrafficLights|reg3b:inst12|mux21:inst4
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg3b:inst12|mux21:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg3b:inst12|mux21:inst5
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|fsm_lights:inst15
+load <= OR2.DB_MAX_OUTPUT_PORT_TYPE
+clock => reg2b:inst1.clock
+reset => reg2b:inst1.reset
+next_state[0] => program_state:inst.next_state[0]
+next_state[1] => program_state:inst.next_state[1]
+program_state[0] => program_state:inst.program_state[0]
+program_state[1] => program_state:inst.program_state[1]
+program_state[2] => program_state:inst.program_state[2]
+program_state[3] => program_state:inst.program_state[3]
+temp_reset <= OR0.DB_MAX_OUTPUT_PORT_TYPE
+lights[0] <= AND0.DB_MAX_OUTPUT_PORT_TYPE
+lights[1] <= AND1.DB_MAX_OUTPUT_PORT_TYPE
+lights[2] <= AND2.DB_MAX_OUTPUT_PORT_TYPE
+out_state[0] <= OR1.DB_MAX_OUTPUT_PORT_TYPE
+out_state[1] <= XOR0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TrafficLights|fsm_lights:inst15|reg2b:inst1
+s[0] <= FF0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= FF1.DB_MAX_OUTPUT_PORT_TYPE
+reset => FF0.ACLR
+reset => FF1.ACLR
+clock => FF0.CLK
+clock => FF1.CLK
+d[0] => mux21:inst3.1
+d[1] => mux21:inst4.1
+
+
+|TrafficLights|fsm_lights:inst15|reg2b:inst1|mux21:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|fsm_lights:inst15|reg2b:inst1|mux21:inst4
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst
+out[0] <= mux21_2b:inst1.s[0]
+out[1] <= mux21_2b:inst1.s[1]
+state[0] => NOR1.IN1
+state[0] => NOT0.IN0
+state[0] => mux21_2b:inst2.a[0]
+state[1] => NOR1.IN0
+state[1] => AND2.IN1
+state[1] => mux21_2b:inst2.a[1]
+program_state[0] => AND2.IN2
+program_state[1] => AND3.IN0
+program_state[2] => ~NO_FANOUT~
+program_state[3] => AND3.IN1
+next_state[0] => mux21_2b:inst1.b[0]
+next_state[1] => mux21_2b:inst1.b[1]
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst|mux21_2b:inst1
+s[0] <= mux21:inst3.S
+s[1] <= mux21:inst2.S
+a[0] => mux21:inst3.0
+a[1] => mux21:inst2.0
+b[0] => mux21:inst3.1
+b[1] => mux21:inst2.1
+sel => mux21:inst2.sel
+sel => mux21:inst3.sel
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst|mux21_2b:inst1|mux21:inst2
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst|mux21_2b:inst1|mux21:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst|mux21_2b:inst2
+s[0] <= mux21:inst3.S
+s[1] <= mux21:inst2.S
+a[0] => mux21:inst3.0
+a[1] => mux21:inst2.0
+b[0] => mux21:inst3.1
+b[1] => mux21:inst2.1
+sel => mux21:inst2.sel
+sel => mux21:inst3.sel
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst|mux21_2b:inst2|mux21:inst2
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|fsm_lights:inst15|program_state:inst|mux21_2b:inst2|mux21:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg2b:inst8
+s[0] <= FF0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= FF1.DB_MAX_OUTPUT_PORT_TYPE
+reset => FF0.ACLR
+reset => FF1.ACLR
+clock => FF0.CLK
+clock => FF1.CLK
+d[0] => mux21:inst3.1
+d[1] => mux21:inst4.1
+
+
+|TrafficLights|reg2b:inst8|mux21:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg2b:inst8|mux21:inst4
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|mux21:inst2
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|freq_divider:inst1
+clk_out <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst51.ACLR
+rst => inst50.ACLR
+rst => inst49.ACLR
+rst => inst48.ACLR
+rst => inst47.ACLR
+rst => inst46.ACLR
+rst => inst45.ACLR
+rst => inst44.ACLR
+rst => inst43.ACLR
+rst => inst42.ACLR
+rst => inst41.ACLR
+rst => inst40.ACLR
+rst => inst39.ACLR
+rst => inst38.ACLR
+rst => inst37.ACLR
+rst => inst36.ACLR
+rst => inst35.ACLR
+rst => inst34.ACLR
+rst => inst33.ACLR
+rst => inst32.ACLR
+rst => inst31.ACLR
+rst => inst30.ACLR
+rst => inst29.ACLR
+rst => inst28.ACLR
+rst => inst.ACLR
+clk => inst.CLK
+
+
+|TrafficLights|reg4b_inc:inst7
+S[0] <= FF0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= FF1.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= FF2.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= FF3.DB_MAX_OUTPUT_PORT_TYPE
+reset => FF0.ACLR
+reset => FF1.ACLR
+reset => FF2.ACLR
+reset => FF3.ACLR
+clock => FF0.CLK
+clock => FF1.CLK
+clock => FF2.CLK
+clock => FF3.CLK
+inc => mux21:inst6.sel
+inc => mux21:inst5.sel
+inc => mux21:inst4.sel
+inc => mux21:inst3.sel
+
+
+|TrafficLights|reg4b_inc:inst7|mux21:inst6
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg4b_inc:inst7|mux21:inst5
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg4b_inc:inst7|mux21:inst4
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
+|TrafficLights|reg4b_inc:inst7|mux21:inst3
+S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst4.IN0
+sel => inst4.IN1
+sel => inst.IN0
+0 => inst2.IN0
+
+
