@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\dudug\OneDrive\Desktop\CD\LAB08\simulation\qsim
 vTrafficLights
-Z1 !s100 <JKfG[7cKoVL0XVRdRa`K3
-Z2 IBFD;3_Ql?La;gC^CFgcN_3
+Z1 !s100 b2I6o>`]0JzIK3X]h<YK03
+Z2 IO;;_G@o0glQgdS:j?OSCG2
 Z3 Vka[O@XW5o4P6`9NRWd1mL1
 Z4 dC:\Users\dudug\OneDrive\Desktop\CD\LAB08\simulation\qsim
-Z5 w1706159038
+Z5 w1706995198
 Z6 8TrafficLights.vo
 Z7 FTrafficLights.vo
 L0 31
@@ -20,13 +20,13 @@ Z10 o-work work -O0
 Z11 n@traffic@lights
 !i10b 1
 !s85 0
-Z12 !s108 1706159039.109000
+Z12 !s108 1706995199.231000
 Z13 !s107 TrafficLights.vo|
 !s101 -O0
 vTrafficLights_vlg_check_tst
 !i10b 1
-Z14 !s100 U[VNkIQdW61_76BmWKaHA0
-Z15 Iim6ZflA27Ejj[UUBjY<oJ3
+Z14 !s100 =UlBBYJ3c=gbG3Vbk;?U>2
+Z15 IWWgPe8zX0g77`UA^caQk[0
 Z16 VnXnbUONF4B03R7E92ba<h0
 R4
 R5
@@ -37,7 +37,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1706159039.146000
+Z19 !s108 1706995199.272000
 Z20 !s107 TrafficLights.vt|
 Z21 !s90 -work|work|TrafficLights.vt|
 !s101 -O0
@@ -65,14 +65,14 @@ R10
 Z26 n@traffic@lights_vlg_sample_tst
 vTrafficLights_vlg_vec_tst
 !i10b 1
-!s100 ?@>aE?Y7Onc8M1nb2dAoK1
-ITB;J8V=i@4oV>bof3?e932
-Z27 VKn0VAJZo>1JSZTWHhM9o;2
+Z27 !s100 ?@>aE?Y7Onc8M1nb2dAoK1
+Z28 ITB;J8V=i@4oV>bof3?e932
+Z29 VKn0VAJZo>1JSZTWHhM9o;2
 R4
 R5
 R17
 R18
-Z28 L0 206
+Z30 L0 206
 R8
 r1
 !s85 0
@@ -82,4 +82,4 @@ R20
 R21
 !s101 -O0
 R10
-Z29 n@traffic@lights_vlg_vec_tst
+Z31 n@traffic@lights_vlg_vec_tst

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TrafficLights
-Thu Jan 25 02:00:10 2024
+Fri Feb 02 22:46:17 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 25 02:00:10 2024           ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 02 22:46:17 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; TrafficLights                                   ;
 ; Top-level Entity Name              ; TrafficLights                                   ;
@@ -166,12 +166,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; TrafficLights.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/TrafficLights.bdf             ;         ;
 ; utils/reg2b.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/utils/reg2b.bdf               ;         ;
 ; utils/mux21_2b.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/utils/mux21_2b.bdf            ;         ;
+; utils/program_state.bdf          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/utils/program_state.bdf       ;         ;
 ; utils/reg3b.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/utils/reg3b.bdf               ;         ;
-; mux21.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/mux21.bdf                     ;         ;
+; mux21.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/dudug/onedrive/desktop/cd/lab08/utils/mux21.bdf               ;         ;
 ; fsm_lights.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/fsm_lights.bdf                ;         ;
-; program_state.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dudug/OneDrive/Desktop/CD/LAB08/program_state.bdf             ;         ;
+; sync_counter.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/dudug/onedrive/desktop/cd/lab08/utils/sync_counter.bdf        ;         ;
 ; freq_divider.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/dudug/onedrive/desktop/cd/lab08/freq_divider/freq_divider.bdf ;         ;
-; reg4b_inc.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/dudug/onedrive/desktop/cd/lab08/utils/reg4b_inc.bdf           ;         ;
 +----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+---------+
 
 
@@ -205,21 +205,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
-; |TrafficLights             ; 14 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |TrafficLights                               ; work         ;
-;    |fsm_lights:inst15|     ; 7 (2)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|fsm_lights:inst15             ; work         ;
-;       |reg2b:inst1|        ; 5 (5)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|fsm_lights:inst15|reg2b:inst1 ; work         ;
-;    |reg2b:inst8|           ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg2b:inst8                   ; work         ;
-;    |reg3b:inst12|          ; 3 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst12                  ; work         ;
-;       |mux21:inst3|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst12|mux21:inst3      ; work         ;
-;       |mux21:inst4|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst12|mux21:inst4      ; work         ;
-;       |mux21:inst5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst12|mux21:inst5      ; work         ;
-;    |reg4b_inc:inst7|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg4b_inc:inst7               ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
+; |TrafficLights             ; 14 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |TrafficLights                             ; work         ;
+;    |fsm_lights:inst|       ; 7 (2)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|fsm_lights:inst             ; work         ;
+;       |reg2b:inst1|        ; 5 (5)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|fsm_lights:inst|reg2b:inst1 ; work         ;
+;       |reg2b:inst8|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|fsm_lights:inst|reg2b:inst8 ; work         ;
+;    |reg3b:inst8|           ; 3 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst8                 ; work         ;
+;       |mux21:inst3|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst8|mux21:inst3     ; work         ;
+;       |mux21:inst4|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst8|mux21:inst4     ; work         ;
+;       |mux21:inst5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|reg3b:inst8|mux21:inst5     ; work         ;
+;    |sync_counter:inst5|    ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TrafficLights|sync_counter:inst5          ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -303,7 +303,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Jan 25 02:00:09 2024
+    Info: Processing started: Fri Feb 02 22:46:17 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TrafficLights -c TrafficLights
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file trafficlights.bdf
@@ -315,28 +315,28 @@ Warning (12019): Can't analyze file -- file fsm_trafficlights.bdf is missing
 Warning (12019): Can't analyze file -- file pog.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file utils/mux21_2b.bdf
     Info (12023): Found entity 1: mux21_2b
-Warning (12019): Can't analyze file -- file utils/program_state.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file utils/program_state.bdf
+    Info (12023): Found entity 1: program_state
 Info (12021): Found 1 design units, including 1 entities, in source file utils/reg3b.bdf
     Info (12023): Found entity 1: reg3b
 Info (12127): Elaborating entity "TrafficLights" for the top level hierarchy
-Info (12128): Elaborating entity "reg3b" for hierarchy "reg3b:inst12"
-Warning (12125): Using design file mux21.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Info (12128): Elaborating entity "reg3b" for hierarchy "reg3b:inst8"
+Warning (12125): Using design file utils/mux21.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: mux21
-Info (12128): Elaborating entity "mux21" for hierarchy "reg3b:inst12|mux21:inst4"
+Info (12128): Elaborating entity "mux21" for hierarchy "reg3b:inst8|mux21:inst4"
 Warning (12125): Using design file fsm_lights.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: fsm_lights
-Info (12128): Elaborating entity "fsm_lights" for hierarchy "fsm_lights:inst15"
-Info (12128): Elaborating entity "reg2b" for hierarchy "fsm_lights:inst15|reg2b:inst1"
-Warning (12125): Using design file program_state.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: program_state
-Info (12128): Elaborating entity "program_state" for hierarchy "fsm_lights:inst15|program_state:inst"
-Info (12128): Elaborating entity "mux21_2b" for hierarchy "fsm_lights:inst15|program_state:inst|mux21_2b:inst1"
+Info (12128): Elaborating entity "fsm_lights" for hierarchy "fsm_lights:inst"
+Warning (275009): Pin "next_state" not connected
+Info (12128): Elaborating entity "reg2b" for hierarchy "fsm_lights:inst|reg2b:inst1"
+Info (12128): Elaborating entity "program_state" for hierarchy "fsm_lights:inst|program_state:inst"
+Info (12128): Elaborating entity "mux21_2b" for hierarchy "fsm_lights:inst|program_state:inst|mux21_2b:inst1"
+Warning (12125): Using design file utils/sync_counter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: sync_counter
+Info (12128): Elaborating entity "sync_counter" for hierarchy "sync_counter:inst5"
 Warning (12125): Using design file freq_divider/freq_divider.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: FREQ_DIVIDER
 Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:inst1"
-Warning (12125): Using design file utils/reg4b_inc.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: reg4b_inc
-Info (12128): Elaborating entity "reg4b_inc" for hierarchy "reg4b_inc:inst7"
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 25 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -345,10 +345,10 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 14 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4586 megabytes
-    Info: Processing ended: Thu Jan 25 02:00:10 2024
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4585 megabytes
+    Info: Processing ended: Fri Feb 02 22:46:17 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

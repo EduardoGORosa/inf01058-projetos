@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\jooca\OneDrive\Documentos\UFRGS\Circuitos Digitais\Trabalho_Final\simulation\qsim
+vTrabalho_Final
+Z1 I<ZR`AOM3c^NQ4b4WN>dX<1
+Z2 V7NECMW@Li[?HdooB`c>BA1
+Z3 dC:\Users\dudug\OneDrive\Desktop\CD\Trabalho Final\simulation\qsim
+Z4 w1707184529
+Z5 8Trabalho_Final.vo
+Z6 FTrabalho_Final.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Trabalho_Final.vo|
+Z9 o-work work -O0
+Z10 n@trabalho_@final
+!i10b 1
+Z11 !s100 `4Pm8cU5EJ_kPKoRIlz6=1
+!s85 0
+Z12 !s108 1707184530.459000
+Z13 !s107 Trabalho_Final.vo|
+!s101 -O0
+vTrabalho_Final_vlg_check_tst
+!i10b 1
+!s100 VkaMIOH`dC6FlIOf^Z`nX2
+ImMjT8F<j8H9<UW1VO4U_>2
+V]3nFznoH`=ZTQ4U3V9dMW0
+R3
+Z14 w1707184528
+Z15 8Trabalho_Final.vt
+Z16 FTrabalho_Final.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1707184530.523000
+Z18 !s107 Trabalho_Final.vt|
+Z19 !s90 -work|work|Trabalho_Final.vt|
+!s101 -O0
+R9
+Z20 n@trabalho_@final_vlg_check_tst
+vTrabalho_Final_vlg_sample_tst
+!i10b 1
+Z21 !s100 1i6MS<gS5C8EOQ6Q9m@=Q3
+Z22 IaU_k[2^IzQXdo`OjEBnLC2
+Z23 V0g67=7FR:bndOJnN9[8Aa1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z24 n@trabalho_@final_vlg_sample_tst
+vTrabalho_Final_vlg_vec_tst
+!i10b 1
+!s100 h5;g?iZJbAc:LIWM?^J@n1
+Ijlo`XKJb0^JKonk_g4KX<1
+Z25 VT:IQoXHBRF[d37V>ABc343
+R3
+R14
+R15
+R16
+L0 678
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+Z26 n@trabalho_@final_vlg_vec_tst

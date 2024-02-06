@@ -3,7 +3,7 @@ $comment
 		vcd file TrafficLights.msim.vcd -direction
 $end
 $date
-	Thu Jan 25 02:03:59 2024
+	Sat Feb 03 18:19:59 2024
 $end
 $version
 	ModelSim Version 10.1d
@@ -24,36 +24,36 @@ $var wire 1 ( unknown $end
 $var tri1 1 ) devclrn $end
 $var tri1 1 * devpor $end
 $var tri1 1 + devoe $end
-$var wire 1 , inst8|FF0~q $end
-$var wire 1 - inst8|FF1~q $end
-$var wire 1 . inst7|FF2~q $end
-$var wire 1 / inst15|AND1~0_combout $end
-$var wire 1 0 inst15|XOR0~combout $end
-$var wire 1 1 inst7|FF2~0_combout $end
+$var wire 1 , inst5|FF3~q $end
+$var wire 1 - inst|inst8|FF0~q $end
+$var wire 1 . inst5|FF2~q $end
+$var wire 1 / inst5|FF3~0_combout $end
+$var wire 1 0 inst|AND1~0_combout $end
+$var wire 1 1 inst5|FF2~0_combout $end
 $var wire 1 2 green~output_o $end
 $var wire 1 3 red~output_o $end
 $var wire 1 4 yellow~output_o $end
 $var wire 1 5 clock~input_o $end
 $var wire 1 6 clock~inputclkctrl_outclk $end
-$var wire 1 7 inst7|FF0~0_combout $end
-$var wire 1 8 inst15|inst1|FF1~0_combout $end
-$var wire 1 9 inst7|FF0~q $end
-$var wire 1 : inst7|FF1~0_combout $end
-$var wire 1 ; inst7|FF1~q $end
-$var wire 1 < inst7|FF3~0_combout $end
-$var wire 1 = inst7|FF3~q $end
-$var wire 1 > inst15|inst1|FF1~1_combout $end
-$var wire 1 ? inst15|inst1|FF1~2_combout $end
-$var wire 1 @ inst15|inst1|FF1~q $end
-$var wire 1 A inst15|inst1|FF0~2_combout $end
-$var wire 1 B inst15|inst1|FF0~3_combout $end
-$var wire 1 C inst15|inst1|FF0~q $end
-$var wire 1 D inst12|inst5|inst3~combout $end
-$var wire 1 E inst12|FF0~q $end
-$var wire 1 F inst12|inst3|inst3~combout $end
-$var wire 1 G inst12|FF2~q $end
-$var wire 1 H inst12|inst4|inst3~0_combout $end
-$var wire 1 I inst12|FF1~q $end
+$var wire 1 7 inst5|FF0~0_combout $end
+$var wire 1 8 inst|inst1|FF1~0_combout $end
+$var wire 1 9 inst5|FF0~q $end
+$var wire 1 : inst5|FF1~0_combout $end
+$var wire 1 ; inst5|FF1~q $end
+$var wire 1 < inst|inst1|FF0~2_combout $end
+$var wire 1 = inst|inst1|FF0~3_combout $end
+$var wire 1 > inst|inst1|FF0~q $end
+$var wire 1 ? inst|XOR0~combout $end
+$var wire 1 @ inst|inst8|FF1~q $end
+$var wire 1 A inst|inst1|FF1~1_combout $end
+$var wire 1 B inst|inst1|FF1~2_combout $end
+$var wire 1 C inst|inst1|FF1~q $end
+$var wire 1 D inst8|inst5|inst3~combout $end
+$var wire 1 E inst8|FF0~q $end
+$var wire 1 F inst8|inst3|inst3~combout $end
+$var wire 1 G inst8|FF2~q $end
+$var wire 1 H inst8|inst4|inst3~0_combout $end
+$var wire 1 I inst8|FF1~q $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -73,8 +73,8 @@ x(
 0,
 0-
 0.
-1/
-00
+0/
+10
 01
 02
 03
@@ -88,10 +88,10 @@ x(
 0;
 0<
 0=
-1>
+0>
 0?
 0@
-0A
+1A
 0B
 0C
 0D
@@ -106,8 +106,8 @@ $end
 15
 16
 0%
-1,
-1B
+1-
+1=
 #20000
 0!
 05
@@ -118,14 +118,14 @@ $end
 15
 16
 0%
-1C
+1>
 1D
-0B
-1A
+1?
+0=
+1<
 08
-10
-0/
-1B
+00
+1=
 #40000
 0!
 05
@@ -136,9 +136,9 @@ $end
 15
 16
 0%
+1@
 19
-1-
-0,
+0-
 1E
 1:
 07
@@ -222,10 +222,10 @@ $end
 16
 0%
 19
-1<
 0:
 07
 01
+1/
 #180000
 0!
 05
@@ -236,10 +236,10 @@ $end
 15
 16
 0%
-1=
 0;
 09
 0.
+1,
 17
 #200000
 0!
@@ -267,9 +267,9 @@ $end
 1;
 09
 0A
-0>
+0<
 17
-0B
+0=
 #240000
 0!
 05
@@ -280,20 +280,20 @@ $end
 15
 16
 0%
-0C
+0>
 19
-1?
+1B
+0?
 18
-00
-1/
+10
 0:
 07
 11
+0,
 09
 0;
-0=
-1>
-0<
+1A
+0/
 17
 01
 #260000
@@ -306,13 +306,13 @@ $end
 15
 16
 0%
-1@
-0-
-1,
+1C
+0@
+1-
 1H
 0D
+1?
 08
-10
 #280000
 0!
 05
@@ -323,18 +323,18 @@ $end
 15
 16
 0%
+1@
 19
-1-
 1I
 0E
-0>
+0A
 1:
 07
 14
 02
 1$
 0"
-0?
+0B
 #300000
 0!
 05
@@ -345,14 +345,14 @@ $end
 15
 16
 0%
-0@
+0C
 1;
 09
 1B
-1?
+0?
+1=
 18
-00
-1>
+1A
 17
 0;
 0:
@@ -367,14 +367,14 @@ $end
 16
 0%
 1C
-1@
-0-
+0@
+1>
 0H
 1F
-0B
-1A
+0=
 08
-1B
+1<
+1=
 #340000
 0!
 05
@@ -472,10 +472,10 @@ $end
 16
 0%
 19
-1<
 0:
 07
 01
+1/
 #480000
 0!
 05
@@ -486,10 +486,10 @@ $end
 15
 16
 0%
-1=
 0;
 09
 0.
+1,
 17
 #500000
 0!
@@ -517,10 +517,10 @@ $end
 1;
 09
 0A
-0>
+0<
 17
 0B
-0?
+0=
 #540000
 0!
 05
@@ -532,18 +532,18 @@ $end
 16
 0%
 0C
-0@
+0>
 19
-1B
+1=
 18
 0:
 07
 11
+0,
 09
 0;
-0=
-1>
-0<
+1A
+0/
 17
 01
 #560000
@@ -556,15 +556,15 @@ $end
 15
 16
 0%
-1C
+1>
 0F
 1D
-0B
-1A
+1?
+0=
+1<
 08
-10
-0/
-1B
+00
+1=
 #580000
 0!
 05
@@ -575,9 +575,9 @@ $end
 15
 16
 0%
+1@
 19
-1-
-0,
+0-
 0G
 1E
 1:
@@ -664,10 +664,10 @@ $end
 16
 0%
 19
-1<
 0:
 07
 01
+1/
 #720000
 0!
 05
@@ -678,10 +678,10 @@ $end
 15
 16
 0%
-1=
 0;
 09
 0.
+1,
 17
 #740000
 0!
@@ -709,9 +709,9 @@ $end
 1;
 09
 0A
-0>
+0<
 17
-0B
+0=
 #780000
 0!
 05
@@ -722,20 +722,20 @@ $end
 15
 16
 0%
-0C
+0>
 19
-1?
+1B
+0?
 18
-00
-1/
+10
 0:
 07
 11
+0,
 09
 0;
-0=
-1>
-0<
+1A
+0/
 17
 01
 #800000
@@ -748,13 +748,13 @@ $end
 15
 16
 0%
-1@
-0-
-1,
+1C
+0@
+1-
 1H
 0D
+1?
 08
-10
 #820000
 0!
 05
@@ -765,18 +765,18 @@ $end
 15
 16
 0%
+1@
 19
-1-
 1I
 0E
-0>
+0A
 1:
 07
 14
 02
 1$
 0"
-0?
+0B
 #840000
 0!
 05
@@ -787,14 +787,14 @@ $end
 15
 16
 0%
-0@
+0C
 1;
 09
 1B
-1?
+0?
+1=
 18
-00
-1>
+1A
 17
 0;
 0:
@@ -809,14 +809,14 @@ $end
 16
 0%
 1C
-1@
-0-
+0@
+1>
 0H
 1F
-0B
-1A
+0=
 08
-1B
+1<
+1=
 #880000
 0!
 05

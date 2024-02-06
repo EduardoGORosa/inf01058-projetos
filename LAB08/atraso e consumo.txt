@@ -2,4 +2,4 @@ Total logic elements: 14
 Total registers: 11
 Total pins: 4
 
-atraso: 5.691
+atraso: 5.409
